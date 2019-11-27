@@ -29,6 +29,9 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jMenu5 = new javax.swing.JMenu();
+        jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
+        jToggleButton3 = new javax.swing.JToggleButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -38,32 +41,38 @@ public class Menu extends javax.swing.JFrame {
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
-        jCheckBoxMenuItem6 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem7 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem22 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem19 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem5 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem8 = new javax.swing.JCheckBoxMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
+        jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem16 = new javax.swing.JMenuItem();
+        jMenuItem19 = new javax.swing.JMenuItem();
+        jMenuItem22 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jCheckBoxMenuItem10 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem11 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem23 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem20 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem9 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem12 = new javax.swing.JCheckBoxMenuItem();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
+        jMenuItem17 = new javax.swing.JMenuItem();
+        jMenuItem20 = new javax.swing.JMenuItem();
+        jMenuItem23 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jCheckBoxMenuItem14 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem15 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem24 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem21 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem13 = new javax.swing.JCheckBoxMenuItem();
-        jCheckBoxMenuItem16 = new javax.swing.JCheckBoxMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
+        jMenuItem12 = new javax.swing.JMenuItem();
+        jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem18 = new javax.swing.JMenuItem();
+        jMenuItem21 = new javax.swing.JMenuItem();
+        jMenuItem24 = new javax.swing.JMenuItem();
 
         jMenu5.setText("jMenu5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
+
+        jToggleButton1.setText("Locação");
+
+        jToggleButton2.setText("Devolução");
+
+        jToggleButton3.setText("Sair");
 
         jMenu2.setText("Alterar");
 
@@ -89,85 +98,67 @@ public class Menu extends javax.swing.JFrame {
 
         jMenu1.setText("Cadastrar");
 
-        jCheckBoxMenuItem6.setSelected(true);
-        jCheckBoxMenuItem6.setText("Categoria");
-        jMenu1.add(jCheckBoxMenuItem6);
+        jMenuItem7.setText("Categoria");
+        jMenu1.add(jMenuItem7);
 
-        jCheckBoxMenuItem7.setSelected(true);
-        jCheckBoxMenuItem7.setText("Cliente");
-        jMenu1.add(jCheckBoxMenuItem7);
+        jMenuItem10.setText("Cliente");
+        jMenu1.add(jMenuItem10);
 
-        jCheckBoxMenuItem22.setSelected(true);
-        jCheckBoxMenuItem22.setText("Classificação");
-        jMenu1.add(jCheckBoxMenuItem22);
+        jMenuItem13.setText("Classificação");
+        jMenu1.add(jMenuItem13);
 
-        jCheckBoxMenuItem19.setSelected(true);
-        jCheckBoxMenuItem19.setText("Filme");
-        jMenu1.add(jCheckBoxMenuItem19);
+        jMenuItem16.setText("Filme");
+        jMenu1.add(jMenuItem16);
 
-        jCheckBoxMenuItem5.setSelected(true);
-        jCheckBoxMenuItem5.setText("Funcionario");
-        jMenu1.add(jCheckBoxMenuItem5);
+        jMenuItem19.setText("Funcionario");
+        jMenu1.add(jMenuItem19);
 
-        jCheckBoxMenuItem8.setSelected(true);
-        jCheckBoxMenuItem8.setText("DVD");
-        jMenu1.add(jCheckBoxMenuItem8);
+        jMenuItem22.setText("DVD");
+        jMenu1.add(jMenuItem22);
 
         jMenuBar1.add(jMenu1);
 
         jMenu4.setText("Consultar");
 
-        jCheckBoxMenuItem10.setSelected(true);
-        jCheckBoxMenuItem10.setText("Categoria");
-        jMenu4.add(jCheckBoxMenuItem10);
+        jMenuItem8.setText("Categoria");
+        jMenu4.add(jMenuItem8);
 
-        jCheckBoxMenuItem11.setSelected(true);
-        jCheckBoxMenuItem11.setText("Cliente");
-        jMenu4.add(jCheckBoxMenuItem11);
+        jMenuItem11.setText("Cliente");
+        jMenu4.add(jMenuItem11);
 
-        jCheckBoxMenuItem23.setSelected(true);
-        jCheckBoxMenuItem23.setText("Classificação");
-        jMenu4.add(jCheckBoxMenuItem23);
+        jMenuItem14.setText("Classificação");
+        jMenu4.add(jMenuItem14);
 
-        jCheckBoxMenuItem20.setSelected(true);
-        jCheckBoxMenuItem20.setText("Filme");
-        jMenu4.add(jCheckBoxMenuItem20);
+        jMenuItem17.setText("Filme");
+        jMenu4.add(jMenuItem17);
 
-        jCheckBoxMenuItem9.setSelected(true);
-        jCheckBoxMenuItem9.setText("Funcionario");
-        jMenu4.add(jCheckBoxMenuItem9);
+        jMenuItem20.setText("Funcionario");
+        jMenu4.add(jMenuItem20);
 
-        jCheckBoxMenuItem12.setSelected(true);
-        jCheckBoxMenuItem12.setText("DVD");
-        jMenu4.add(jCheckBoxMenuItem12);
+        jMenuItem23.setText("DVD");
+        jMenu4.add(jMenuItem23);
 
         jMenuBar1.add(jMenu4);
 
         jMenu3.setText("Excluir");
 
-        jCheckBoxMenuItem14.setSelected(true);
-        jCheckBoxMenuItem14.setText("Categoria");
-        jMenu3.add(jCheckBoxMenuItem14);
+        jMenuItem9.setText("Categoria");
+        jMenu3.add(jMenuItem9);
 
-        jCheckBoxMenuItem15.setSelected(true);
-        jCheckBoxMenuItem15.setText("Cliente");
-        jMenu3.add(jCheckBoxMenuItem15);
+        jMenuItem12.setText("Cliente");
+        jMenu3.add(jMenuItem12);
 
-        jCheckBoxMenuItem24.setSelected(true);
-        jCheckBoxMenuItem24.setText("Classificação");
-        jMenu3.add(jCheckBoxMenuItem24);
+        jMenuItem15.setText("Classificação");
+        jMenu3.add(jMenuItem15);
 
-        jCheckBoxMenuItem21.setSelected(true);
-        jCheckBoxMenuItem21.setText("Filme");
-        jMenu3.add(jCheckBoxMenuItem21);
+        jMenuItem18.setText("Filme");
+        jMenu3.add(jMenuItem18);
 
-        jCheckBoxMenuItem13.setSelected(true);
-        jCheckBoxMenuItem13.setText("Funcionario");
-        jMenu3.add(jCheckBoxMenuItem13);
+        jMenuItem21.setText("Funcionario");
+        jMenu3.add(jMenuItem21);
 
-        jCheckBoxMenuItem16.setSelected(true);
-        jCheckBoxMenuItem16.setText("DVD");
-        jMenu3.add(jCheckBoxMenuItem16);
+        jMenuItem24.setText("DVD");
+        jMenu3.add(jMenuItem24);
 
         jMenuBar1.add(jMenu3);
 
@@ -177,11 +168,24 @@ public class Menu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addComponent(jToggleButton1)
+                .addGap(55, 55, 55)
+                .addComponent(jToggleButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addComponent(jToggleButton3)
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jToggleButton1)
+                    .addComponent(jToggleButton2)
+                    .addComponent(jToggleButton3))
+                .addContainerGap(194, Short.MAX_VALUE))
         );
 
         pack();
@@ -223,24 +227,6 @@ public class Menu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem10;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem11;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem12;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem13;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem14;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem15;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem16;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem19;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem20;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem21;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem22;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem23;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem24;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem5;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem6;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem7;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem8;
-    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -248,10 +234,31 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem10;
+    private javax.swing.JMenuItem jMenuItem11;
+    private javax.swing.JMenuItem jMenuItem12;
+    private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
+    private javax.swing.JMenuItem jMenuItem15;
+    private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
+    private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem20;
+    private javax.swing.JMenuItem jMenuItem21;
+    private javax.swing.JMenuItem jMenuItem22;
+    private javax.swing.JMenuItem jMenuItem23;
+    private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
+    private javax.swing.JToggleButton jToggleButton3;
     // End of variables declaration//GEN-END:variables
 }
