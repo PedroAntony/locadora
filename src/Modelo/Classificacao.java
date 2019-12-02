@@ -10,5 +10,32 @@ package Modelo;
  * @author Pedro Antony
  */
 public class Classificacao {
+    private int Codigo;
+    private String Nome;
+    private double Preco;
+
+    public int getCodigo() {
+        return Codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.Codigo = codigo;
+    }
+
+    public String getNome() {
+        return Nome;
+    }
+
+    public void setNome(String nome) {
+        this.Nome = nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
     
 }
