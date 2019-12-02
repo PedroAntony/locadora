@@ -64,5 +64,5 @@ public class Aluguel {
     public void setData_devolucao(String data_devolucao) {
         this.data_devolucao = data_devolucao;
     }
-    
+        
 }
