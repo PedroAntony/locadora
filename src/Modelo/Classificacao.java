@@ -31,11 +31,11 @@ public class Classificacao {
     }
 
     public double getPreco() {
-        return preco;
+        return Preco;
     }
 
     public void setPreco(double preco) {
-        this.preco = preco;
+        this.Preco = preco;
     }
     
 }
