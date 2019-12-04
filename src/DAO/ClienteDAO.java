@@ -1,14 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DAO;
 
-/**
- *
- * @author Pedro Antony
- */
+import java.sql.*;
+
 public class ClienteDAO {
+    public String Inserir_Cliente(Cliente a){
+    String sql = "insert into cliente values (0,?,?,?,?,?,?,?,?,?,?)";
+        try{
+        PreparedStatement ps = getCon( ) .PreparedStatement(sql);
+        }catch(SQLException e){
+            return e.getMessage();
+        
+        }
+    }
     
 }
